@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../font/icon/icomoon.eot?wfykxz');
+  src:  url('../font/icon/icomoon.eot?wfykxz#iefix') format('embedded-opentype'),
+    url('../font/icon/icomoon.ttf?wfykxz') format('truetype'),
+    url('../font/icon/icomoon.woff?wfykxz') format('woff'),
+    url('../font/icon/icomoon.svg?wfykxz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change font/icon */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-vessence:before {
+  content: "\ea915";
+  color: #44c3aa;
+}
+.icon-un-vessence:before {
+  content: "\ea916";
+  color: #44c3aa;
+}
+.icon-end:before {
+  content: "\ea917";
+  color: #44c3aa;
+}
+.icon-reply:before {
+  content: "\ea918";
+  color: #44c3aa;
+}
+.icon-un-reply:before {
+  content: "\ea919";
+  color: #44c3aa;
+}
+.icon-Shield:before {
+  content: "\ea920";
+  color: #44c3aa;
+}
+.icon-un-essence:before {
+  content: "\ea90c";
+  color: #44c3aa;
+}
+.icon-essence:before {
+  content: "\ea90d";
+  color: #44c3aa;
+}
+.icon-an-excuse:before {
+  content: "\ea90e";
+  color: #44c3aa;
+}
+.icon-un-comment:before {
+  content: "\ea90f";
+  color: #44c3aa;
+}
+.icon-comment:before {
+  content: "\ea910";
+  color: #44c3aa;
+}
+.icon-bcircle-end:before {
+  content: "\ea911";
+  color: #44c3aa;
+}
+.icon-bcircle-shield:before {
+  content: "\ea912";
+  color: #44c3aa;
+}
+.icon-link:before {
+  content: "\ea913";
+  color: #44c3aa;
+}
+.icon-ml:before {
+  content: "\ea900";
+  color: #44c3aa;
+}
+.icon-delete:before {
+  content: "\ea901";
+  color: #e75f5f;
+}
+.icon-upload:before {
+  content: "\ea902";
+  color: #44c3aa;
+}
+.icon-pass:before {
+  content: "\ea903";
+  color: #44c3aa;
+}
+.icon-sync:before {
+  content: "\ea904";
+  color: #44c3aa;
+}
+.icon-detail:before {
+  content: "\ea905";
+  color: #44c3aa;
+}
+.icon-preview:before {
+  content: "\ea906";
+  color: #44c3aa;
+}
+.icon-un-preview:before {
+  content: "\ea914";
+  color: #44c3aa;
+}
+.icon-data:before {
+  content: "\ea907";
+  color: #44c3aa;
+}
+.icon-know:before {
+  content: "\ea908";
+  color: #44c3aa;
+}
+.icon-reject:before {
+  content: "\ea909";
+  color: #44c3aa;
+}
+.icon-export:before {
+  content: "\ea90a";
+  color: #44c3aa;
+}
+.icon-fenfa:before {
+  content: "\ea90b";
+  color: #44c3aa;
+}

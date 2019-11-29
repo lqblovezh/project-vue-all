@@ -1,0 +1,63 @@
+@import './variable.styl';
+@import './util.styl';
+
+set-color('theme', theme-color)
+set-color('f', #FFF)
+set-color('default', #CCC)
+set-color('main', main-bg-color)
+set-color('font-main', font-color__basic)
+set-color('font-gray', font-color__gray)
+set-color('3', font-color__3)
+set-color('6', font-color__6)
+set-color('9', font-color__9)
+set-color('title', #575757)
+
+for fz in 11 12 13 14 15 16 17 18
+  .f{fz}
+    font-size unit(fz, px)
+
+for size in 1 2 3 4 5
+	setEllipsis(size)
+
+button
+	outline none
+	border none
+
+input
+	margin 0
+	padding 0
+
+img
+	max-width 100%
+
+.tc
+	text-align center
+.tr
+	text-align right
+
+.line
+	height 0.2rem
+	background-color line-color
+
+.pr
+	position relative
+.pa
+	position absolute!important
+
+.ib
+	display inline-block
+.dn
+	display none
+.bb
+	box-sizing border-box
+.r180
+	transform rotate(180deg)
+	transition all .3s
+
+.clearfix
+	&:after
+		content ''
+		display block
+		height 0
+		visibility hidden
+		clear both

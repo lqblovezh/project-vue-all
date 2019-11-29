@@ -1,0 +1,224 @@
+@import 'variable.styl'
+@import 'util.styl'
+.title-container
+  padding-top header-height
+.container
+  padding 0 0.30rem
+.flex
+  display flex
+.flex-tc
+  display flex
+  justify-content center
+  align-items center
+.flex-bs
+  display flex
+  align-items center
+  justify-content space-between
+.flex-ac
+  display flex
+  align-items center
+.fixed-bottom
+  position fixed
+  width 100%
+  bottom 0
+.mb30rem
+  margin-bottom 0.3rem
+.pb20rem
+  padding-bottom 0.2rem
+button
+	width 1.5rem
+	height 0.5rem
+	line-height 0.5rem
+	border none
+	outline none
+	&:active
+		box-shadow inset 0 3px 5px rgba(0,0,0,.1)
+.btn-default
+	color theme-color
+	background-color #FFF
+	border 1px solid theme-color
+.btn-theme
+	color #FFF
+	background-color theme-color
+.btn-error
+	color #FFF
+	background-color red
+.c-bg-linear
+  background linear-gradient(to right, #f1d29e, #ecc78c, #e7bc79)
+
+.p-tips
+  height 0.6rem
+  line-height 0.6rem
+  font-size 14px
+  color font-color__basic
+
+.center-scroll
+  scroll()
+  padding-top header-height
+  padding-bottom bottom-height
+.bottom-scroll
+  scroll()
+  padding-bottom bottom-height
+.top-scroll
+  scroll()
+  padding-top header-height
+
+.center-scroll--ios
+  scroll()
+  padding-top header-height + line-height
+  padding-bottom bottom-height
+.bottom-scroll--ios
+  scroll()
+  padding-top line-height
+  padding-bottom bottom-height
+.top-scroll--ios
+  scroll()
+  padding-top header-height+line-height
+
+// category页面
+.category
+  &-wrapper
+    position relative
+    height 100%
+    overflow-x hidden
+    overflow-y auto
+    > .left-panel
+      position absolute
+      top 0
+      left 0
+      bottom 0
+      width category-left-width
+      background-color default-color
+      .cube-tab-bar
+        flex-wrap wrap
+        // background-color
+        > .cube-tab
+          width 100%
+          padding 0
+          flex-basis unset
+          height category-left-item-height
+          line-height category-left-item-height
+          font-size 14px
+          color #4d4d4d
+          transition all .3s ease-in
+          &.cube-tab_active
+            position relative
+            color theme-color
+            font-size 16px
+            background-color #FFF
+            &:before
+              content ''
+              display inline-block
+              position absolute
+              left 0
+              top 0.25rem
+              width 0.06rem
+              height 0.4rem
+              background-color theme-color
+    > .right-panel
+      position absolute
+      top 0
+      bottom 0
+      left category-left-width
+      right 0
+
+// page 登录注册等页面公用样式
+.ui-user
+  .panel
+    height 3.52rem
+  form
+    .btn-form
+      margin-top 1.26rem
+      width 100%
+      height 0.8rem
+      border-radius 999px
+  .form-line
+    margin 0.41rem 0.28rem 0
+  .link-register
+    left 0
+    right 0
+    bottom 1.1rem
+    a
+      color #c39f52
+
+// 我的--vip页面
+.vip-bg
+  height 3.6rem
+  background url(../img/vip-bg.png) no-repeat center
+  background-size cover
+
+.scroll
+  position relative
+  z-index 10
+
+.nc-checkbox
+  position relative
+  margin-right 0.2rem
+.nc-checkbox-input
+  width 20px
+  height 20px
+  opacity 0
+input[type="checkbox"]
+  position absolute
+  z-index 10
+  box-sizing border-box
+  padding 0
+.nc-checkbox-input:checked+.nc-checkbox-core
+  background-color theme-color
+  border-color theme-color
+.nc-checkbox-core
+  display inline-block
+  background-color #fff
+  border-radius 100%
+  border 1px solid #ccc
+  position relative
+  width 20px
+  height 20px
+  vertical-align middle
+.nc-checkbox-input:checked+.nc-checkbox-core:after
+  border-color #fff
+  transform rotate(45deg) scale(1)
+.nc-checkbox-core:after
+  border 2px solid transparent
+  border-left 0
+  border-top 0
+  content ''
+  top 4px
+  left 7px
+  position absolute
+  width 4px
+  height 8px
+  transform rotate(45deg) scale(0)
+  transition transform .2s, -webkit-transform .2s
+
+.result-list
+  > div
+    padding 0.3rem
+    border-bottom 1px solid #ebf2f1
+    .name
+      color #2e3332
+      font-size 15px
+      margin-bottom 0.28rem
+    .abs
+      color #666
+      line-height 1.5
+      font-size 14px
+      margin-bottom 0.3rem
+    .source
+      color #a3a3a3
+      font-size 12px
+
+.book-panel
+  &__title
+    display flex
+    justify-content space-between
+    padding 0.2rem 0
+    .name
+      font-weight bold
+      font-size 16px
+      color #333
+  &__body
+    padding-bottom 0.3rem
+    border-bottom 1px solid #ebf2f1
+    .content
+      line-height 1.5

@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../font/menu/icomoon.eot?6c9djo');
+  src: url('../font/menu/icomoon.eot?6c9djo#iefix') format('embedded-opentype'),
+    url('../font/menu/icomoon.ttf?6c9djo') format('truetype'),
+    url('../font/menu/icomoon.woff?6c9djo') format('woff'),
+    url('../font/menu/icomoon.svg?6c9djo#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='icon-menu-'],
+[class*=' icon-menu-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  // line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu-banner:before {
+  content: '\e900';
+}
+.icon-menu-book:before {
+  content: '\e901';
+}
+.icon-menu-bookStatistics:before {
+  content: '\e902';
+}
+.icon-menu-classify:before {
+  content: '\e903';
+}
+.icon-menu-comment:before {
+  content: '\e904';
+}
+.icon-menu-copyright:before {
+  content: '\e905';
+}
+.icon-menu-dealStatistics:before {
+  content: '\e906';
+}
+.icon-menu-help:before {
+  content: '\e907';
+}
+.icon-menu-home:before {
+  content: '\e908';
+}
+.icon-menu-memberList:before {
+  content: '\e909';
+}
+.icon-menu-orderManage:before {
+  content: '\e90a';
+}
+.icon-menu-role:before {
+  content: '\e90b';
+}
+.icon-menu-search:before {
+  content: '\e90c';
+}
+.icon-menu-searchStatistics:before {
+  content: '\e90d';
+}
+.icon-menu-special:before {
+  content: '\e90e';
+}
+.icon-menu-statistics:before {
+  content: '\e90f';
+}
+.icon-menu-strategy:before {
+  content: '\e910';
+}
+.icon-menu-systemSeting:before {
+  content: '\e911';
+}
+.icon-menu-typeface:before {
+  content: '\e912';
+}
+.icon-menu-userStatistics:before {
+  content: '\e913';
+}

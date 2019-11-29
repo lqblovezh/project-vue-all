@@ -1,0 +1,68 @@
+
+apply(props)
+  props = arguments if length(arguments) > 1
+  for prop in props
+    {prop[0]} prop[1]
+
+setMarginAndPadding(m = 0, n = 0)
+  margin unit(m, px)
+  padding unit(n, px)
+
+box-sizing(type = border-box)
+  box-sizing border-box
+
+setEllipsis(num)
+  if (num == 1)
+    .ellipsis
+      white-space nowrap
+      text-overflow ellipsis
+      overflow hidden
+  else
+    .ellipsis-{num}
+      overflow hidden
+      text-overflow ellipsis
+      display -webkit-box
+      -webkit-line-clamp num
+      -webkit-box-orient vertical
+
+set-color(name, color)
+  .c-{name}
+    color color
+  .c-bg-{name}
+    background-color color
+
+set-padding(n, u = 'rem', flag = false)
+  for i in m p
+    .{i}t{n * 100}
+      padding-top unit(n, u)
+    .{i}l{n * 100}
+      padding-left unit(n, u)
+    .{i}b{n * 100}
+      padding-bottom unit(n, u)
+    .{i}r{n * 100}
+      padding-right unit(n, u)
+    if flag
+      .{i}{n * 100}
+        padding unit(n, u)
+
+set-button(w, h, flag)
+  width w
+  height h
+  if flag
+    line-height h
+
+set-icon(name, w, h, isInline = false)
+  .icon-{name}
+    if isInline
+      display inline-block
+    width w
+    height h
+    background url('../img/' + name + '.png') no-repeat center
+    background-size contain
+scroll()
+  height 100vh
+  box-sizing border-box
+  > .scroll-full
+    height 100%
+    overflow auto
+    // pointer-events none

@@ -1,0 +1,276 @@
+html
+  min-height 100%
+  background #f4f4f5
+body
+  overflow scroll
+  word-break break-all
+.noscorll
+  overflow hidden
+.mainRight
+  font-size 14px
+  background #ececec
+  padding 0px 20px 0
+  // padding-left 20px
+  padding-right 20px
+  box-sizing border-box
+  min-width 1400px
+.shallow-color
+  color #666666
+.main-color
+  color #333333
+.danger-color
+  color #d64848
+.already-color
+  color #4ac4ac
+.wait-color
+  color #4ac472
+.group, .group-inline
+  line-height 38px
+  margin 10px 0
+  .label
+    display inline-block
+    text-align right
+    padding-right 20px
+    min-width 100px
+    color #000
+    &.must
+      &:before
+        content '*'
+        position relative
+        top 2px
+        left -3px
+        color #F04844
+.group-inline
+  margin 0 10px
+  display inline-block
+  // line-height: 38px;
+.center
+  text-align center
+.left
+  text-align left
+.right
+  text-align right
+.rowWrap .right
+  text-align left
+.tableWrap
+  padding 20px
+  background #fff
+.gruopList
+  display inline-block
+  margin-left 20px
+.articleWrap
+  margin 30px
+  >div
+    margin 10px 0
+  input
+    border none
+    width 100%
+    &:focus
+      border none
+      outline none
+  .title
+    font-size 22px
+    height 46px
+    line-height 46px
+    font-weight 700
+  .author
+    height 40px
+    line-height 20px
+    font-size 16px
+.vel-line
+  position relative
+  &:before
+    content ' '
+    position absolute
+    width 4px
+    height 20px
+    z-index 10
+    top 50%
+    background #39baa1
+.tableTop
+  height 50px
+  line-height 50px
+  margin-top -20px
+  >.title
+    padding-left 15px
+    &:before
+      margin-left -16px
+      margin-top -10px
+  .btns
+    float right
+  .totalNum
+    color #44c3aa
+.mediaList
+  .itemWrap
+    display inline-block
+    width 25%
+    padding 10px
+    box-sizing border-box
+  .imgWrap
+    cursor pointer
+    transition all 0.3s ease-in-out
+    >.name
+      min-width 170px
+      height 20px
+      line-height 20px
+      font-size 14px
+      overflow hidden
+      >span+span
+        margin-left 10px
+    &:hover
+      box-shadow 0px 4px 8px 0px rgba(4, 0, 0, 0.35)
+      transform translateY(-5px)
+      transition all 0.3s ease-in-out
+    .imgcontent
+      position relative
+      >img
+        height 200px
+        width 100%
+        max-height 250px
+      .cover
+        position absolute
+        top 0
+        left 0
+        right 0
+        bottom 0
+        z-index -10
+        height auto
+        color #fff
+        background rgba(0, 0, 0, 0)
+        transition all 0.3s ease-in-out
+        .time
+          position absolute
+          bottom 5px
+          right 5px
+          font-size 14px
+        .tag
+          margin 5px
+          .name
+            font-size 16px
+      &:hover
+        .cover
+          z-index 10
+          background rgba(0, 0, 0, 0.8)
+          transition all 0.3s ease-in-out
+  .btns
+    text-align center
+    margin-top 15px
+    .el-button+.el-button
+      margin-left 5
+.imgLinkDialogContent
+  .imgWrap
+    text-align center
+    >img, video, audio
+      max-width 500px
+      margin-bottom 5px
+      width 100%
+  .btns
+    text-align center
+    margin-top 15px
+    .el-button+.el-button
+      margin-left 15
+.btns
+  text-align right
+.detailmain
+  .wrap
+    display inline-block
+    width 80%
+    video, audio, img
+      margin-right 20px
+    .msg
+      display inline-block
+      .val
+        margin-left 20px
+.myDialogWrap
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background rgba(0, 0, 0, 0.6)
+  z-index 2000
+  overflow-y auto
+  .content
+    margin-top 150px
+    text-align center
+    .imgWrap
+      position relative
+      display inline-block
+      >img, video
+        max-width 800px
+      .closeBtn
+        cursor pointer
+        position absolute
+        right 0
+        top 0
+        margin-top -50px
+        height 30px
+        width 30px
+        background url('../../assets/img/imgclose.png') no-repeat center
+.detailmain
+  .wrap
+    >video
+      width 400px
+.wailianinput
+  input
+    width 600px
+  .confirmBtn
+    margin-left 100px
+.coverImg
+  width 400px
+.group
+  .types>span+span
+    margin-left 30px
+.contentLeft
+  // background #f6f6f6
+  min-width 1215px
+  min-height 850px
+.myDialogWrap
+  .content
+    .imgWrap
+      video
+        width 800px
+        background #000
+.allBtn
+  width 55px
+.index
+  .tableWrap
+    display inline-block
+    width calc(100% - 270px)
+.icon
+  margin-right 10px
+  cursor pointer
+  display inline
+th.time
+  width 160px
+th.operate
+  width 160px
+.th-name
+  overflow hidden
+  height 65px
+  line-height 65px
+  text-overflow ellipsis
+  white-space nowrap
+.float-right
+  float right
+.ellipsis
+  overflow hidden
+  text-overflow ellipsis
+  white-space nowrap
+.group>span>span
+  margin-right 30px
+.types
+  .shallow-color
+    margin-left 15px
+.form-content
+  display inline-block
+  padding-left 25px
+  cursor pointer
+  user-select none
+.el-tabs__content
+  .tableWrap
+    width 98%
+.table-check
+  width 25px
+input[type='checkbox']:disabled
+  cursor no-drop

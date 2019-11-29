@@ -1,0 +1,141 @@
+span {
+  word-break: break-all;
+  white-space: pre-wrap !important;
+}
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-size: 16px;
+}
+
+.article-wrap .article-title {
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  video {
+    width: 100% !important;
+  }
+  .test {
+    font-size: 100px;
+  }
+  #audio {
+    width: 80%;
+  }
+  .video-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333;
+    text-align: center;
+  }
+  .video-wrap .content {
+    text-align: center;
+    margin-top: 25vh;
+  }
+
+  #video {
+    margin: auto;
+    width: 100%;
+  }
+  .audio-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333;
+    text-align: center;
+  }
+
+  .audio-wrap .content {
+    text-align: center;
+    margin-top: 25vh;
+  }
+  .article-wrap {
+    width: 100%;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  .article-wrap img,video{
+    width: 100%;
+  }
+  .picture-wrap {
+    text-align: center;
+  }
+  .picture-wrap img {
+    width: 100% ;
+  }
+}
+
+@media (min-width: 451px) {
+  #app video,
+  #app audio {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .test {
+    font-size: 20px;
+  }
+  .video-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333;
+    text-align: center;
+  }
+  .video-wrap .content {
+    text-align: center;
+    margin-top: 15vh;
+  }
+
+  #video {
+    margin: auto;
+    width: 600px;
+  }
+  .audio-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333;
+    text-align: center;
+  }
+
+  .audio-wrap .content {
+    text-align: center;
+    margin-top: 100px;
+  }
+  .article-wrap {
+    width: 1000px;
+    margin: 0px auto;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    background: #fff;
+    margin-top: 50px;
+  }
+  .article-wrap .p span {
+    word-break: break-all;
+  }
+  .picture-wrap {
+    text-align: center;
+  }
+
+  #audio {
+    width: 300px;
+  }
+}

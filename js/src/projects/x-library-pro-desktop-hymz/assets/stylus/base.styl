@@ -1,0 +1,94 @@
+@import 'mixin.styl'
+@import 'variable.styl'
+
+set-color('theme', $color-theme)
+set-color('sub-theme', $color-sub-theme)
+set-color('f', #fff)
+set-color('header', $color-text-header)
+for size in 12 14 15 16 17 18
+  .f{size}
+    font-size unit(size, px)
+
+for num in 1 2 3 4
+  if (num == 1)
+    .ell
+      white-space nowrap
+      text-overflow ellipsis
+      overflow hidden
+  else
+    .ell{num}
+      display -webkit-box
+      -webkit-line-clamp num
+      text-overflow ellipsis
+      -webkit-box-orient vertical
+      overflow hidden
+
+body, html
+  line-height: 1
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback'
+  // user-select: none
+  -webkit-tap-highlight-color: transparent
+  background: $color-background
+  color: $color-text
+  min-height 100vh
+.pr
+  position relative
+.pa
+  position absolute
+.ib
+  display inline-block
+.dn
+  display none
+.oh
+  overflow hidden
+.fl
+  float left
+.fr
+  float right
+.tc
+  text-align center
+.tr
+  text-align right
+.cp
+  cursor pointer
+.p20
+  padding 20px
+.clearfix
+  zoom 1
+  &:after
+    content ''
+    display block
+    height 0
+    visibility hidden
+    clear both
+@media screen and (max-width: 1400px)
+  .container
+    width 960px
+    margin 0 auto
+@media screen and (min-width: 1401px)
+  .container
+    width 1100px
+    margin 0 auto
+.flex
+  display flex
+.flex-ac
+  display flex
+  align-items center
+.flex-bs
+  display flex
+  align-items center
+  justify-content space-between
+.flex-center
+  display flex
+  align-items center
+  justify-content center
+.grid-5
+  >div
+    float left
+    width 20%
+    box-sizing border-box
+.grid-4
+  >div
+    float left
+    width 25%
+    box-sizing border-box

@@ -1,0 +1,21 @@
+.
+  window.config = {};
+  var restUrl_publish = ''
+| !{'\n'}
+if dev
+  .
+    var restUrl_system = !{JSON.stringify(baseUrl + '/')}
+    var restUrl_common = !{JSON.stringify(baseUrl + '/')}
+    var restUrl = !{JSON.stringify(baseUrl + restUrl)}
+else
+  .
+    var restUrl_system = "{{config('app.url','')}}"   // /system/*
+
+  if inSystem
+    .
+      var restUrl_common = "{{config('app.url','')}}"
+      var restUrl = "/system"
+  else
+    .
+      var restUrl_common = "{{config('current_publisher.base_url')}}"  // /common/*
+      var restUrl = "{{config('current_application.base_url', '/common')}}" // /*

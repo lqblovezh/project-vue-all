@@ -1,0 +1,9 @@
+/*可以在这里添加你自己的css*/
+body.view{
+  margin: 0;
+  padding: 8px 30px;
+  font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+}
+img,video,audio {
+    max-width: 100%; /*图片自适应宽度*/
+}

@@ -1,0 +1,50 @@
+.reader3_label {
+  color: inherit !important;
+  text-decoration: underline !important;
+}
+@keyframes pre-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pre-loading-hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.my-pre-mask.load-hide {
+  animation: pre-loading-hide 0.6s linear forwards;
+}
+.my-pre-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: 300000;
+}
+.my-pre-mask > .pre-loading {
+  margin-top: 45vh;
+  text-align: center;
+}
+.my-pre-mask > .pre-loading > .loading-text {
+  font-size: 15px;
+}
+.my-circular {
+  animation: pre-loading 1s linear infinite;
+  height: 60px;
+  width: 60px;
+  color: #fff;
+  stroke-dasharray: 90, 150;
+  stroke-dashoffset: 0;
+  stroke-width: 4;
+  stroke: #0980bb;
+  stroke-linecap: round;
+}

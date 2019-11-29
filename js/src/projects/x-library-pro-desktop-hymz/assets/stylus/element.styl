@@ -1,0 +1,111 @@
+@import './variable.styl'
+
+.home-search-input
+  button
+    height 52px!important
+  .el-button--search
+    width 104px
+    color #fff
+    background $background-linear-green
+    border-radius 0
+    border none
+  .el-button--adv-search
+    border-radius 0
+    background $background-linear-yellow
+    border none
+    margin-left 10px
+.el-button--theme
+  color #fff
+  background-color $color-theme
+  &:hover
+    color #fff
+    background-color lightness($color-theme, 20%)
+.el-button--theme-empty
+  color $color-theme
+  &:hover
+    color lightness($color-theme, 20%)
+.search-input
+  .el-select .el-input
+    width 100px
+  .input-with-select .el-input-group__prepend
+    background-color #fff
+.el-pagination.is-background .el-pager li:not(.disabled).active
+  background-color #c39f52
+  color #fffdf7
+  border none
+.el-pagination.is-background .el-pager li
+  background-color none
+  border solid 1px #c39f52
+  color #c39f52
+.el-pagination__total
+  color #c39f52
+  margin-left 15px
+  margin-right 0
+.el-pagination .btn-next .el-icon, .el-pagination .btn-prev .el-icon
+  color #c39f52
+// 书籍目录
+.book-detail-catalog
+  .el-tree
+    .el-tree-node__content
+      height 54px
+      border-bottom 1px solid #e9e2d1
+      .el-tree-node__expand-icon
+        margin-right 10px
+        padding 0
+// 重置弹出框样式
+.el-dialog__wrapper
+  .el-dialog__header
+    position relative
+    line-height 44px
+    &:before
+      content ''
+      left 20px
+      right 20px
+      bottom 6px
+      position absolute
+      border-bottom 1px solid #6bcdbe
+    &:after
+      content ''
+      left 20px
+      right 20px
+      bottom 0
+      position absolute
+      border-bottom 3px solid #6bcdbe
+    .el-dialog__headerbtn
+      width 22px
+      height 22px
+      top -22px
+      right -22px
+      font-size 15px
+      border-radius 50%
+      color #999999
+      background #f2f8f7
+  .el-dialog__body
+    padding 20px
+// 重置tabs
+.el-tabs
+  .el-tabs__item.is-active
+    color #6bcdbe
+  .el-tabs__active-bar
+    background-color #6bcdbe
+.el-popover
+  background #06b198
+  width 128px
+  height 142px
+  min-width 128px
+  .popper__arrow:after
+    border-bottom-color #06b198 !important
+  .download-panel
+    background #06b198
+    text-align center
+    .name
+      font-size 16px
+      line-height 48px
+      color #ffffff
+    img
+      width 80px
+      height @width
+      object-fit contain
+.el-input-group__append,
+.el-input-group__prepend
+  border none
