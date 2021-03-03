@@ -97,7 +97,7 @@
     "postcss-utilities": "^0.8.0",
     "precss": "^3.1.2",
     "pretty-hrtime": "^1.0.3",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "pug-cli": "^1.0.0-alpha6",
     "pug-loader": "^2.4.0",
     "pug-plain-loader": "^1.0.0",
