@@ -111,7 +111,7 @@
     "style-loader": "^0.22.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
-    "swiper": "^4.4.6",
+    "swiper": "^6.5.1",
     "url-join": "^4.0.0",
     "url-loader": "^0.5.8",
     "url-parse": "^1.4.4",
